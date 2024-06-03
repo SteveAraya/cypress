@@ -24,14 +24,5 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Start the application
-        run: npm start &
-        env:
-          CI: true
-
-      - name: Wait for application to be available
-        run: npx wait-on http://localhost:3000
-        # Asegúrate de cambiar el puerto a donde corre tu aplicación
-
       - name: Run Cypress tests
-        run: npx cypress run --headless
+        run: npm run cy:headless
