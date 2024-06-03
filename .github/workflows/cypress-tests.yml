@@ -8,7 +8,7 @@ on:
     branches:
       - main
   schedule:
-    - cron: "*/6 20-20 * * *"
+    - cron: "0 13 * * 1-5"
 
 jobs:
   cypress-run:
