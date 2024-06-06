@@ -7,8 +7,8 @@ on:
   pull_request:
     branches:
       - main
-  schedule:
-    - cron: "0 13 * * 1-5"
+  # schedule:
+    # - cron: "0 13 * * 1-5"
 
 jobs:
   cypress-run:
